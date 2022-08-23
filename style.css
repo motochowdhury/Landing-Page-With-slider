@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hero {
+    background-image: url(images/img\ \(5\).jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar .logo {
+    width: 50px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user .avatar {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.user button {
+    padding: 10px 25px;
+    background: transparent;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.container {
+    width: 30%;
+    height: 100%;
+    background: rgba(86, 86, 86, 0.3);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: rotateY(-50%);
+}
+.info h1 {
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+.info p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 20px 0;
+    line-height: 15px;
+}
+
+.info input {
+    width: 50%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+
+.slider {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    right: 30px;
+    bottom: 50px;
+    opacity: 80%;
+}
+
+#prev, #next {
+    width: 60px;
+    cursor: pointer;
+}
+#next {
+    transform: scaleX(-90%);
+}
+.preview {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+.thumbnail {
+    width: 80px;
+    margin: 0 10px;
+}
+
+.preview .active {
+    display: block;
+    width: 100px;
+    opacity: 100%;
+    border: 3px solid white;
+}
